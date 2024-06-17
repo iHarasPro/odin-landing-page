@@ -1,0 +1,222 @@
+/* ------------------------------------------------------------------------------------------ */
+/* Import
+/* ------------------------------------------------------------------------------------------ */
+
+@import url("https://fonts.bunny.net/css?family=roboto:300i,400,700,900");
+
+html {
+  font-family: Roboto, "sans-serif";
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* CSS Reset
+/* ------------------------------------------------------------------------------------------ */
+
+*,*::before,*::after {
+  box-sizing: border-box;                         /* Simplify Size Calculations               */
+}
+
+* {
+  margin:  0;                                     /* Remove default Margin  values            */
+  padding: 0;                                     /* Remove default Padding values            */
+}
+
+html {
+  line-height: 1;
+  hanging-punctuation: first last;                /* Allow Punctuations to hang at both sides */
+}
+
+:has(:target) {
+  scroll-behavior: smooth;                        /* Enable Smooth Scrolling                  */
+  scroll-padding-block: 2rem;                     /* Set the offset for the viewing region    */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-wrap: balance;                             /* Balance the wrapped lines on Headings    */
+}
+
+p,li {
+  line-height: 1.5;                               /* Readable Line Height                     */
+  text-wrap: pretty;                              /* Prevent Orphans in Body Text             */
+}
+
+input,button,textarea,select {
+  font: inherit;                                  /* Remove Built-In Typography styles        */
+}
+
+img,svg,picture,video,canvas {
+  display: block;                                 /* Make media elements Block-Level          */
+  max-inline-size: 100%;                          /* Make media elements Responsive           */
+  block-size: auto;                               /* Make media elements Responsive           */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*  Page Geometry  -------------------------------------------------------------------------  */
+
+header,
+footer,
+main > * {
+  padding-inline: max(1rem, calc((100% - 50rem)/2));
+}
+
+header,
+footer {
+  padding-block: 1rem;
+}
+
+.top,
+.info,
+.quote {
+  padding-block: 4rem;
+}
+
+
+/*  Background Colors  ---------------------------------------------------------------------  */
+
+header,
+footer,
+.top {
+  background-color: #1F2937;
+  color: #E5E7EB;
+}
+
+.quote {
+  background-color: #E5E7EB;
+  color: #1F2937;
+}
+
+.action form {
+  background-color: #3882F6;
+  color: #E5E7EB;
+}
+
+/*  Header  --------------------------------------------------------------------------------  */
+
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+header a {
+  font-size: 1.125rem;
+}
+
+.logo {
+  margin-inline-end: auto;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+/*  Main - Top  ----------------------------------------------------------------------------  */
+
+.top {
+  display: flex;
+  gap: 2rem;
+}
+
+.left,
+.right {
+  flex: 1 1 0%;
+}
+
+h1 {
+  margin-block-end: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+.top p {
+  margin-block-end: 1rem;
+  font-size: 1.125rem;
+}
+
+.top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6D747D;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  background-color: #3882F6;
+  border: 0.1rem solid #3882F6;
+  border-radius: 0.5rem;
+  color: #F9FAF8;
+  font-weight: 800;
+}
+
+/*  Main - Information  --------------------------------------------------------------------  */
+
+.info {
+  text-align: center;
+}
+
+.info h2 {
+  margin-block-end: 3rem;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1F2937;
+}
+
+.box-list {
+  display: flex;
+  gap: 3rem;
+}
+
+.image {
+  margin-block-end: 0.75rem;
+  border: 0.2rem solid blue;
+  border-radius: 1rem;
+  aspect-ratio: 1;
+}
+
+/*  Main - Quote  --------------------------------------------------------------------------  */
+
+.quote {
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+cite {
+  display: block;
+  text-align: end;
+  font-size: 1.125rem;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*  Main - Call to Action ------------------------------------------------------------------  */
+
+.action form {
+  padding: 2rem 6rem;
+  border-radius: 1rem;
+  margin-block: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.action h2 {
+  color: #F9FAF8;
+}
+
+.action button {
+  margin-inline-start: auto;
+  border: 0.15rem solid #F9FAF8;
+}
+
+/*  Footer  --------------------------------------------------------------------------------  */
+
+footer {
+  text-align: center;
+}
+
+/*  ----------------------------------------------------------------------------------------  */
